@@ -34,6 +34,10 @@ a {
 	align-items: center;
 }
 
+.wait {
+	font-size: 2rem;
+}
+
 .menu {
 	display: flex;
 	padding: 0;
