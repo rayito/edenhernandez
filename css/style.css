@@ -1,6 +1,6 @@
-body {
+body, * {
 	font-family: "Raleway", "Open Sans", sans;
-	
+	box-sizing: border-box;
 }
 
 a {
@@ -30,6 +30,7 @@ a {
 #content {
 	display: flex;
 	height: 100%;
+	padding: 77px 0;
 	justify-content: center;
 	align-items: center;
 }
