@@ -1,0 +1,92 @@
+.row {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	max-width: 1200px;
+}
+.text-row {
+	padding: 0 1rem;
+	width: 100%;
+	max-width: 1200px;
+}
+.side {
+	flex-grow: 1;
+}
+
+.table {
+	display: flex;
+	flex-direction: column;
+	min-width: 60%;
+}
+
+.trow {
+	display: flex;
+	margin-bottom: .2rem;
+}
+
+.thead,
+.tcell {
+	padding: .5rem;
+}
+
+.tcell {
+	flex-grow: 1;
+}
+
+.head div {
+	color: #FFF;
+	background-color: #4F81BD;
+}
+.even div {
+	color: #182738;
+	background-color: #D0D8E8;
+}
+.odd div {
+	color: #182738;
+	background-color: #E9EDF4;
+}
+
+.trow p {
+	margin-top: 0;
+	font-family: "Work Sans", sans;
+	font-size: 17px;
+	font-weight: 300;
+}
+.trow p:last-child {
+	margin-bottom: .5rem;
+}
+.thead {
+	min-width: 90px;
+	max-width: 90px;
+	margin-right: .1rem;
+	font-family: "Work Sans", sans;
+	font-size: 17px;
+	font-weight: 400;
+}
+
+.side {
+	padding: 0 1rem;
+}
+
+@media screen and (max-width: 950px) {
+	.thead,
+	.tcell p {
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.row {
+		flex-direction: column;
+	}
+
+	.logframe-table {
+		order: 1;
+	}
+}
+
+#content {
+	flex-direction: column;
+	justify-content: flex-start;
+	height: auto;
+}
