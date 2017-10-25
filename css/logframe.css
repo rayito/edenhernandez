@@ -6,6 +6,7 @@
 }
 .text-row {
 	padding: 0 1rem;
+	margin-bottom: 2rem;
 	width: 100%;
 	max-width: 1200px;
 }
@@ -51,6 +52,7 @@
 	font-family: "Work Sans", sans;
 	font-size: 17px;
 	font-weight: 300;
+	color: #000;
 }
 .trow p:last-child {
 	margin-bottom: .5rem;
@@ -62,6 +64,9 @@
 	font-family: "Work Sans", sans;
 	font-size: 17px;
 	font-weight: 400;
+}
+.head p {
+	color: #FFF;
 }
 
 .side {
@@ -75,6 +80,12 @@
 	}
 }
 
+@media screen and (min-width: 701px) {
+	h2 {
+		margin-top: 0;
+	}
+}
+
 @media screen and (max-width: 700px) {
 	.row {
 		flex-direction: column;
@@ -83,10 +94,23 @@
 	.logframe-table {
 		order: 1;
 	}
+
+	.text-row {
+		margin-bottom: 0;
+	}
 }
 
 #content {
 	flex-direction: column;
 	justify-content: flex-start;
 	height: auto;
+}
+
+.info {
+	font-size: 18px;
+}
+
+.info strong {
+	font-size: 19px;
+	font-weight: 500;
 }

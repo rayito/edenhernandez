@@ -3,8 +3,14 @@ body, * {
 	box-sizing: border-box;
 }
 
-p {
-	font-weight: 300;
+p,
+.p {
+	font-weight: 400;
+    color: #555;
+}
+
+p strong {
+	font-weight: 600;
 }
 
 h1 {
