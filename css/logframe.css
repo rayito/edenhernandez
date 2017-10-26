@@ -3,6 +3,7 @@
 	justify-content: center;
 	width: 100%;
 	max-width: 1200px;
+	margin-bottom: 3rem;
 }
 .text-row {
 	padding: 0 1rem;
@@ -23,26 +24,57 @@
 .trow {
 	display: flex;
 	margin-bottom: .2rem;
+	align-items: baseline;
 }
 
 .thead,
-.tcell {
+.tcell,
+th, td {
 	padding: .5rem;
+}
+
+table {
+	font-size: 17px;
+}
+
+th {
+	font-weight: 400;
+}
+
+.logframe-matrix td {
+	font-weight: 300;
+	color: #000;
+}
+
+.tsm {
+	font-size: 14px;
+}
+
+.txs {
+	font-size: 12px;
+}
+
+.txxs {
+	font-size: 10px;
+}
+
+.description {
+    min-width: 165px;
 }
 
 .tcell {
 	flex-grow: 1;
 }
 
-.head div {
+.head {
 	color: #FFF;
 	background-color: #4F81BD;
 }
-.even div {
+.even {
 	color: #182738;
 	background-color: #D0D8E8;
 }
-.odd div {
+.odd {
 	color: #182738;
 	background-color: #E9EDF4;
 }
@@ -60,7 +92,6 @@
 .thead {
 	min-width: 90px;
 	max-width: 90px;
-	margin-right: .1rem;
 	font-family: "Work Sans", sans;
 	font-size: 17px;
 	font-weight: 400;
@@ -77,6 +108,10 @@
 	.thead,
 	.tcell p {
 		font-size: 15px;
+	}
+
+	.trow {
+		flex-direction: column;
 	}
 }
 

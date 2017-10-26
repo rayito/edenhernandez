@@ -7,6 +7,7 @@ p,
 .p {
 	font-weight: 400;
     color: #555;
+    line-height: 1.5rem;
 }
 
 p strong {
