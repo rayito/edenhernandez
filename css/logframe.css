@@ -41,6 +41,10 @@ th {
 	font-weight: 400;
 }
 
+.logframe-matrix {
+	overflow-x: scroll;
+}
+
 .logframe-matrix td {
 	font-weight: 300;
 	color: #000;
@@ -148,4 +152,20 @@ th {
 .info strong {
 	font-size: 19px;
 	font-weight: 500;
+}
+
+.wireframe {
+    display: flex;
+    justify-content: center;
+	width: 100%;
+	margin-bottom: 2rem;
+	
+}
+
+.wireframe img {
+	max-width: 1200px;
+}
+
+.row-wireframe {
+	flex-direction: column;
 }
