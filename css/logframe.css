@@ -154,6 +154,10 @@ th {
 	font-weight: 500;
 }
 
+.logframe-table img {
+	width: 100%;
+}
+
 .wireframe {
     display: flex;
     justify-content: center;
@@ -163,7 +167,14 @@ th {
 }
 
 .wireframe img {
-	max-width: 1200px;
+	height: 100%;
+}
+
+.dashboard {
+	background-image: url("../images/portfolio/logframe/01_Dashboard.png");
+	background-size: contain;
+	max-width: 100%;
+	max-height: auto;
 }
 
 .row-wireframe {

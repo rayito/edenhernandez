@@ -6,12 +6,15 @@ $(document).ready(function() {
 function adapt() {
 	var height = window.innerHeight;
     $('body').height(height);
+
+    if ( $(".wireframe").length ) {
+    	$(".wireframe img").width( $(".row").width() - 32 );
+    }
 }
 
 function setListeners() {
 	$(window).resize(function() {
-		var height = window.innerHeight;
-    	$('body').height(height);
+		adapt();
 	});
 }
 
