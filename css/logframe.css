@@ -1,24 +1,21 @@
 .row {
-	display: flex;
-	justify-content: center;
 	width: 100%;
-	max-width: 1200px;
-	margin-bottom: 3rem;
+	max-width: 800px;
+	margin-bottom: 1rem;
+	padding: 0 1rem;
 }
 .text-row {
 	padding: 0 1rem;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 	width: 100%;
-	max-width: 1200px;
-}
-.side {
-	flex-grow: 1;
+	max-width: 800px;
 }
 
 .table {
 	display: flex;
 	flex-direction: column;
 	min-width: 60%;
+	margin: 2rem 0;
 }
 
 .trow {
@@ -104,11 +101,7 @@ th {
 	color: #FFF;
 }
 
-.side {
-	padding: 0 1rem;
-}
-
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 816px) {
 	.thead,
 	.tcell p {
 		font-size: 15px;
@@ -116,12 +109,6 @@ th {
 
 	.trow {
 		flex-direction: column;
-	}
-}
-
-@media screen and (min-width: 701px) {
-	h2 {
-		margin-top: 0;
 	}
 }
 
@@ -145,14 +132,7 @@ th {
 	height: auto;
 }
 
-.info {
-	font-size: 18px;
-}
 
-.info strong {
-	font-size: 19px;
-	font-weight: 500;
-}
 
 .logframe-table img {
 	width: 100%;
@@ -162,7 +142,7 @@ th {
     display: flex;
     justify-content: center;
 	width: 100%;
-	margin-bottom: 2rem;
+	margin: 2rem 0;
 	
 }
 
@@ -180,3 +160,4 @@ th {
 .row-wireframe {
 	flex-direction: column;
 }
+

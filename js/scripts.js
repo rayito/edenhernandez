@@ -8,7 +8,10 @@ function adapt() {
     $('body').height(height);
 
     if ( $(".wireframe").length ) {
-    	$(".wireframe img").width( $(".row").width() - 32 );
+    	if (window.innerWidth >= 732)
+    		$(".wireframe img").width( 700 );
+    	else
+    		$(".wireframe img").width( $(".row").width() - 32 );
     }
 }
 
