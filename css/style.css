@@ -41,6 +41,7 @@ a {
 #header {
 	position: fixed;
 	top: 0;
+	z-index: 9999;
 	height: 77px;
 	width: 100%;
 	padding: .5rem 1rem;
@@ -203,7 +204,7 @@ a {
 	#content {
 		height: auto;
 	}
-	
+
 	.menu li {
 		width: 195px;
 	}
