@@ -99,11 +99,10 @@ a {
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 300;
 	color: black;
-	padding: 1rem 1.5rem;
+	padding: 1rem .5rem;
+	margin: 0 1rem;
 	position: relative;
 	outline: none;
-	transform-origin: center;
-	transition: transform .2s ease;
 }
 
 .menu li a::after {
@@ -119,8 +118,8 @@ a {
 	transform-origin: center;
 }
 
-.menu li a:hover,
-.menu li a:focus {
+.menu li a:hover .link-text,
+.menu li a:focus .link-text{
 	transform: scale(1.2);
 }
 
@@ -145,6 +144,24 @@ a {
 .sub-title {
 	font-size: 1.5rem;
 	display: block;
+}
+
+.menu li a.portfolio-link,
+.menu li a.cv-link {
+	padding: 1rem .5rem;
+	margin: 0 1rem;
+}
+
+.link-pic {
+    max-height: 8rem;
+}
+
+.link-text {
+	padding-top: 1rem;
+
+	text-align: center;
+	transform-origin: center;
+	transition: transform .2s ease;
 }
 
 @media screen and (max-width: 690px) {
@@ -182,6 +199,11 @@ a {
 		flex-direction: column;
 		align-items: center;
 	}
+
+	#content {
+		height: auto;
+	}
+	
 	.menu li {
 		width: 195px;
 	}
