@@ -4,8 +4,8 @@ $(document).ready(function() {
 });
 
 function adapt() {
-	var height = window.innerHeight;
-    $('body').height(height);
+	//var height = window.innerHeight;
+    //$('body').height(height);
 
     if ( $(".wireframe").length ) {
     	if (window.innerWidth >= 732)
