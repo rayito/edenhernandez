@@ -1,0 +1,27 @@
+body {
+	background-image: url("../images/rayito copia.png");
+	background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-position-y: 53px;
+    background-size: 50%;
+}
+
+@media screen and (max-width: 570px) {
+	body {
+		background-position-y: center;
+    	background-size: 70%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -3,15 +3,6 @@ body, * {
 	box-sizing: border-box;
 }
 
-body {
-	background-image: url("../images/rayito copia.png");
-	background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-position-y: 53px;
-    background-size: 50%;
-}
-
 p,
 .p {
 	font-weight: 300;
@@ -287,11 +278,6 @@ p.hello strong {
 		font-size: 2rem; 
 		line-height: 3rem;
 		padding: 0;
-	}
-
-	body {
-		background-position-y: center;
-    	background-size: 70%;
 	}
 }
 
