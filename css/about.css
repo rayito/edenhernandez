@@ -1,0 +1,29 @@
+.about img {
+	width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+	.about img {
+		width: 1000px;
+		position: relative;
+		left: -200px;
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.about img {
+		left: -260px;
+	}
+}
+
+@media screen and (max-width: 490px) {
+	.about img {
+		left: -320px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.about img {
+		left: -380px;
+	}
+}
