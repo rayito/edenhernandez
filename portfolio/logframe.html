@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Eden Hernandez - Logframe</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="author" content="Eden Hernandez" />
+    <meta name="description" content="Eden Hernandez - Logframe" />
+    
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/logframe.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="../js/scripts.js"></script>  
+</head>
+
+<body>
+    <div id="header">
+        <a href="../index.html"><div class="logo-title"><span class="b">edenhernandez</span>design</div></a>
+        <div class="h-links">
+            <div class="burger-cross">
+                <div id="nav-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <ul>
+                <li><a href="../cv.html"><div class="linktext">My CV</div></a></li>
+                <li><a href="../about.html"><div class="linktext">About me</div></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="content">
+        <div class="text-row">
+            <h1 class="title"><span class="main">Social Impact Reporting</span><span class="sub-title">Web app for international development projects management</span></h1>
+            <div class="p info">
+                <strong>Client:</strong> CoE Not-for-profit, UNIT4
+            </div>
+            <div class="p info">
+                <strong>Target:</strong> NGOs, International Development organisations, United Nations,...
+            </div>
+            <p>
+                UNIT4's Center of Excellence for Not-for-profit requested a web implementation of the Logical Framework approach for international development projects. 
+            </p>
+        </div>
+        
+        <div class="row">
+            <h2>The Logical Framework approach</h2>
+            <p>The Logical Framework Approach is a methodology used for the design, management and evaluation of international development projects. It takes the form of a four-by-four project table. Each row represents a <strong>target level</strong> of the corresponding project, as explained below.</p>
+
+            <div class="table logframe-table">
+                <div class="trow head">
+                    <div class="thead">Goal</div>
+                    <div class="tcell"><p>The broad development impact to which the project contributes</p><p>Statement Wording: "To contribute to..."</p></div>
+                </div>
+                <div class="trow even">
+                    <div class="thead">Purposes</div>
+                    <div class="tcell"><p>The development outcome, i.e. the expected benefits to the target group(s) at the end of the project.</p><p>Statement Wording: "Increase, improve, etc."</p></div>
+                </div>
+                <div class="trow odd">
+                    <div class="thead">Outputs</div>
+                    <div class="tcell"><p>The direct/tangible results (goods and services) that the project delivers.</p><p>Statement Wording: "Delivered/produced/conducted, etc."</p></div>
+                </div>
+                <div class="trow even">
+                    <div class="thead">Activities</div>
+                    <div class="tcell"><p>The tasks (work program) that need to be carried out to deliver the planned results.</p><p>Statement Wording: "Prepare, design, construct, research, etc."</p></div>
+                </div>
+            </div>
+            
+            <p>The main <strong>Goal</strong> of the project has several <strong>Purposes (or Outcomes)</strong> with one or several <strong>Outputs</strong> to fulfill them. Finally, for each Output there is one or several <strong>Activities</strong> that must be carried out.</p>
+
+            <p>The core of the Logical Framework is the "logic model" that runs through this matrix.</p>
+
+            <div class="table logframe-table">
+                <img src="logframe/matrix.svg">
+            </div>
+
+            <p>Traditionally, international development organisations have made use of this matrix to document and report their projects, creating <strong>huge tables</strong> and exporting them to the final report in a PDF document.</p>
+            
+            <p>For large projects, the matrix could easily fill up to <strong>30 pages of the final report</strong>.</p>
+        </div>       
+
+        <div class="row">
+            <h2>Wireframes</h2>
+            <p>First of all, I needed to adapt the original matrix to a <strong>web-oriented, navigable layout</strong>. Since the target levels follow a tree structure, a <strong>hierarchical navigation</strong> approach seemed ideal.</p>
+        </div>
+        <div class="wireframe">
+            <img src="logframe/wireframe-outputs.png">
+        </div>
+        <div class="row">
+            <p>Each Purpose (or Outcome), Output and Activity would be represented as an <strong>indepentent block</strong>, showing only the <strong>most relevant information</strong> (description, KPI instead of Success Indicators, baseline, status and target).</p>
+        </div>    
+        <div class="wireframe">
+            <img src="logframe/wireframe-output-open.png">
+        </div>
+        <div class="row">
+            <p>A click on a block would expand the element. It would show all the information about the corresponding <strong>element</strong> and some data about its <strong>sublevels</strong> (in this example, how many <strong>Activities</strong> must be carried out to complete the Output, how many have been <strong>already finished</strong> and a <strong>link</strong> to those Activities). </p>
+        </div>
+        <div class="wireframe">
+            <img src="logframe/wireframe-activities.png">
+        </div>
+        <div class="row">
+            <p>The tree structure would work as a breadcrumb to navigate back to upper levels.</p>
+        </div>
+
+        <div class="row">
+            <h2>Visual Designs</h2>
+            <p>Once the wireframes were accepted, I provided a final design within the UNIT4 visual standards.</p>
+        </div>
+        <div class="wireframe ">
+            <img src="logframe/01_Dashboard.png">
+        </div>
+        <div class="row">
+            <p>A new <strong>overall view</strong> was added to easily navigate and access any level of the project trough an <strong>expandable hierarchichal structure</strong>. Each element had a <strong>link</strong> on the right side to open it in the <strong>independent blocks mode</strong>.</p>
+        </div>
+        <div class="wireframe ">
+            <img src="logframe/02_Outputs.png">
+        </div>
+        <div class="row">
+            <p>Since I wanted the <strong>level-sublevel</strong> structure to be a way to <strong>navigate</strong> back, I changed it to a more <strong>breadcrumb-like</strong> approach including the description of every parent element.</p>
+        </div>
+        <div class="wireframe ">
+            <img src="logframe/03_Outputs2.png">
+        </div>
+        <div class="wireframe ">
+            <img src="logframe/04_Activities.png">
+        </div>
+        <div class="wireframe ">
+            <img src="logframe/05_Activities2.png"> 
+        </div>
+        <div class="row">
+            <p>Finally, I proposed a <strong>visual representation</strong> of the <strong>baseline</strong>, <strong>status</strong>, <strong>target</strong> and <strong>projection</strong> of the Activities, which could also be applied for Outputs and Outcomes .</p>
+        </div>
+    </div>
+</body>
+</html>

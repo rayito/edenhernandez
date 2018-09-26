@@ -133,21 +133,19 @@ th {
 }
 
 
-
 .logframe-table img {
 	width: 100%;
 }
 
 .wireframe {
-    display: flex;
-    justify-content: center;
 	width: 100%;
+	max-width: 1000px;
 	margin: 2rem 0;
-	
 }
 
 .wireframe img {
-	height: 100%;
+	width: 100%;
+	padding: 0 1rem;
 }
 
 .dashboard {

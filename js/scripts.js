@@ -1,8 +1,15 @@
+
 $(document).ready(function() {
-    adapt();
-    setListeners();
+    //adapt();
+    //setListeners();
+
+	$('#nav-icon').click(function() {
+		$(".h-links").toggleClass('open');
+	});
 });
 
+
+/*
 function adapt() {
 	//var height = window.innerHeight;
     //$('body').height(height);
@@ -15,11 +22,13 @@ function adapt() {
     }
 }
 
+
 function setListeners() {
 	$(window).resize(function() {
 		adapt();
 	});
 }
+*/
 
 $(window).scroll(function() {
 	if ( $(window).scrollTop() > 20 ) {
