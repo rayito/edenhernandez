@@ -12,7 +12,7 @@
 	z-index: -1;
 	top: 0;
 	left: 0;
-	background-color: rgba(255,255,255,.4);
+	background-color: rgba(255,255,255,.6);
 	min-width: 100%;
 	min-height: 100%;
 }
@@ -31,7 +31,7 @@ body {
 p {
 	font-size: 1.5rem;
 	line-height: 2.5rem;
-	text-shadow: 0px 0px 1px white;
+	text-shadow: 0px 0px 2px white;
 }
 
 @media screen and (max-width: 700px) {
