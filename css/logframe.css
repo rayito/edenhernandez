@@ -1,16 +1,3 @@
-.row {
-	width: 100%;
-	max-width: 800px;
-	margin-bottom: 1rem;
-	padding: 0 1rem;
-}
-.text-row {
-	padding: 0 1rem;
-	margin-bottom: 1rem;
-	width: 100%;
-	max-width: 800px;
-}
-
 .table {
 	display: flex;
 	flex-direction: column;
@@ -101,6 +88,38 @@ th {
 	color: #FFF;
 }
 
+#content {
+	flex-direction: column;
+	justify-content: flex-start;
+	height: auto;
+}
+
+.logframe-table img {
+	width: 100%;
+}
+
+.wireframe {
+	width: 100%;
+	max-width: 1000px;
+	margin: 2rem 0;
+}
+
+.wireframe img {
+	width: 100%;
+	padding: 0 1.5rem;
+}
+
+.dashboard {
+	background-image: url("../images/portfolio/logframe/01_Dashboard.png");
+	background-size: contain;
+	max-width: 100%;
+	max-height: auto;
+}
+
+.row-wireframe {
+	flex-direction: column;
+}
+
 @media screen and (max-width: 816px) {
 	.thead,
 	.tcell p {
@@ -126,36 +145,9 @@ th {
 	}
 }
 
-#content {
-	flex-direction: column;
-	justify-content: flex-start;
-	height: auto;
-}
-
-
-.logframe-table img {
-	width: 100%;
-}
-
-.wireframe {
-	width: 100%;
-	max-width: 1000px;
-	margin: 2rem 0;
-}
-
-.wireframe img {
-	width: 100%;
-	padding: 0 1rem;
-}
-
-.dashboard {
-	background-image: url("../images/portfolio/logframe/01_Dashboard.png");
-	background-size: contain;
-	max-width: 100%;
-	max-height: auto;
-}
-
-.row-wireframe {
-	flex-direction: column;
+@media screen and (max-width: 570px) {
+	.wireframe img {
+		padding: 0 1rem;
+	}
 }
 
