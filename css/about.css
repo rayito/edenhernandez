@@ -65,6 +65,9 @@ p {
 		font-size: 1.25rem;
 		line-height: 2.25rem;
 	}
+	body {
+		background-position-x: -675px;
+	}
 	
 }
 
@@ -72,6 +75,9 @@ p {
 	p {
 		font-size: 1.15rem;
 		line-height: 2.15rem;
+	}
+	body {
+		background-position-x: -750px;
 	}
 }
 
