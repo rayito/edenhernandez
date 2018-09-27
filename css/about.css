@@ -1,13 +1,37 @@
 #header {
 	background-color: transparent;
+	transition: background-color ease-in-out .4s, box-shadow ease .4s;
 }
 
 #header.shadow {
-	box-shadow: none;
+	background-color: #FFF;
 }
 
-.about img {
-	width: 100%;
+.bg {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	background-color: rgba(255,255,255,.3);
+	min-width: 100%;
+	min-height: 100%;
+}
+
+body {
+	background-image: url("../images/about-cut-tiny.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.text-row {
+	padding: 0 1.5rem;
+}
+
+p {
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	text-shadow: 0px 0px 1px white;
 }
 
 @media screen and (max-width: 700px) {
@@ -21,23 +45,39 @@
 
 
 @media screen and (max-width: 570px) {
-	.about img {
-		left: -260px;
-	}
 
+	.text-row {
+		padding: 0 1rem;
+	}
 	.h-links ul {
 	    background-color: transparent;
+	}
+	.shadow .h-links ul {
+	    background-color: #FFF;
+	}
+	body {
+		background-position-x: -600px;
 	}
 }
 
 @media screen and (max-width: 490px) {
-	.about img {
-		left: -320px;
+	p {
+		font-size: 1.25rem;
+		line-height: 2.25rem;
 	}
+	
 }
 
 @media screen and (max-width: 400px) {
-	.about img {
-		left: -380px;
+	p {
+		font-size: 1.15rem;
+		line-height: 2.15rem;
+	}
+}
+
+@media screen and (max-width: 340px) {
+	p {
+		font-size: 1rem;
+		line-height: 2rem;
 	}
 }

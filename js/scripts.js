@@ -6,6 +6,12 @@ $(document).ready(function() {
 	$('#nav-icon').click(function() {
 		$(".h-links").toggleClass('open');
 	});
+
+
+    if ( $(".bg").length ) {
+    	adapt_bg();
+    	setListeners();
+    }
 });
 
 
@@ -21,14 +27,18 @@ function adapt() {
     		$(".wireframe img").width( $(".row").width() - 32 );
     }
 }
+*/
 
+function adapt_bg() {
+	$(".bg").height( $(document).innerHeight() );
+}
 
 function setListeners() {
 	$(window).resize(function() {
-		adapt();
+		adapt_bg();
 	});
 }
-*/
+
 
 $(window).scroll(function() {
 	if ( $(window).scrollTop() > 20 ) {
@@ -37,3 +47,4 @@ $(window).scroll(function() {
 		$("#header").removeClass("shadow");
 	}
 });
+
