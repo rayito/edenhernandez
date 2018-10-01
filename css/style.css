@@ -317,8 +317,7 @@ p.hello strong {
 		padding: 1rem 2rem;
 	}
 	#header,
-	.text-row,
-	.row {
+	.text-row {
 		padding: 0 1rem;
 	}
 
