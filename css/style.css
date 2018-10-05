@@ -454,7 +454,12 @@ p.hello strong {
 	.text-row.extra-bottom-margin {
 		margin-bottom: 2rem;
 	}
+
+	#content {
+		margin: 60px 0;
+	}
 }
+/* END 570px */
 
 @media screen and (max-width: 387px) {
 	.logo-title, .logo-title span {
