@@ -19,3 +19,40 @@
 	justify-content: flex-start;
 	height: auto;
 }
+
+.portfolio-video-container {
+	position: relative;
+	max-width: 720px;
+}
+
+.portfolio-video-container iframe {
+	width: 100%;
+}
+
+.portfolio-video-container::before {
+	content: "";
+	position: absolute;
+	z-index: 20;
+	width: 2px;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: white;
+}
+
+.portfolio-video-container::after {
+	content: "";
+	position: absolute;
+	z-index: 20;
+	width: 2px;
+	height: 100%;
+	right: 0;
+	top: 0;
+	background-color: white;
+}
+
+@media screen and (max-width: 760px) {
+	#final-cut {
+		padding: 0 1rem;
+	}
+}
