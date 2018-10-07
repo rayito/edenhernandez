@@ -50,13 +50,3 @@
 	top: 0;
 	background-color: white;
 }
-
-#final-cut {
-	margin-top: 2rem;
-}
-
-@media screen and (max-width: 760px) {
-	#final-cut {
-		padding: 0 1rem;
-	}
-}

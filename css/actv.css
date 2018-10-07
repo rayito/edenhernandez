@@ -1,0 +1,18 @@
+#univ-grafico,
+#paleta {
+	margin-top: 2rem;
+}
+
+#logo-final {
+	margin-top: 1rem;
+}
+
+#final-cut {
+	margin-top: 3rem;
+}
+
+@media screen and (max-width: 760px) {
+	#final-cut {
+		margin-top: 2rem;
+	}
+}
