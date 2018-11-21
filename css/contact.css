@@ -1,0 +1,36 @@
+.info {
+	margin-bottom: 1rem;
+}
+
+.title {
+	margin-bottom: 2rem;
+}
+
+.sub-title {
+	margin-bottom: .5rem;
+}
+
+.info a {
+	position: relative;
+}
+
+.info a::after {
+	content: "";
+    min-height: 1px;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform .25s ease;
+    transform-origin: center;
+}
+
+.info a:hover::after {
+	transform: scaleX(1);
+}
+
+.contact-text {
+	max-width: 490px;
+}

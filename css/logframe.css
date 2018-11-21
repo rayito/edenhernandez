@@ -145,7 +145,7 @@ th {
 	}
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 585px) {
 	.wireframe img {
 		padding: 0 1rem;
 	}

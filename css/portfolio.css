@@ -3,6 +3,11 @@
 	max-width: 800px;
 	margin-bottom: 1rem;
 }
+
+.lg {
+	max-width: 1000px;
+}
+
 .text-row {
 	padding: 0 1rem;
 	margin-bottom: 1rem;
@@ -41,6 +46,26 @@
 }
 
 .portfolio-video-container::after {
+	content: "";
+	position: absolute;
+	z-index: 20;
+	width: 2px;
+	height: 100%;
+	right: 0;
+	top: 0;
+	background-color: white;
+}
+
+#linked-arrow {
+	position: relative;
+	top: -4px;
+}
+
+.right-white-bar {
+	position: relative;
+}
+
+.right-white-bar::after {
 	content: "";
 	position: absolute;
 	z-index: 20;

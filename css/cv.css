@@ -6,3 +6,46 @@
 #content {
 	margin-top: 60px;	
 }
+
+.download {
+	display: flex;
+	justify-content: center;
+}
+
+.download a {
+	position: relative;
+}
+
+.download-text {
+	transition: transform ease .15s;
+	font-size: 1.2rem;
+}
+
+.download-text::after {
+	content: "";
+    min-height: 1px;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform .25s ease;
+    transform-origin: center;
+}
+
+.download a:hover .download-text,
+.download a:focus .download-text {
+	transform: scale(1.2);
+}
+
+.download a:hover .download-text::after,
+.download a:focus .download-text::after {
+	transform: scaleX(1);
+}
+
+@media screen and (max-width: 585px) {
+	.download-text {
+		font-weight: 300;
+	}
+}
