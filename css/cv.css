@@ -3,6 +3,11 @@
     max-width: 900px;
 }
 
+.cv img {
+	width: 100%;
+	max-width: 900px;
+}
+
 #content {
 	margin-top: 60px;	
 }
