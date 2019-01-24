@@ -156,15 +156,21 @@ a {
 }
 
 p.hello {
-	font-size: 3rem;
+	font-size: 51px;
 	line-height: 4rem;
 	font-weight: 200;
-	padding: 0 .5rem;
 	margin-top: 0;
 }
 
 p.hello strong {
 	font-weight: 300;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	padding: 0 1.5rem;
+	grid-gap: 2.5rem 1rem;
 }
 
 .portfolio-link {
@@ -173,11 +179,25 @@ p.hello strong {
 
 .portfolio-link img {
 	width: 100%;
-	transition: transform ease-in-out .3s;
+}
+.img-wraper {
+	position: relative;
 }
 
-.portfolio-link:hover img {
-	transform: scale(1.05);
+.portfolio-link .img-wraper::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 98%;
+	background-color: #000;
+	opacity: 0;
+	transition: opacity ease-in-out .3s;
+}
+
+.portfolio-link:hover .img-wraper::after {
+	opacity: .5;
 }
 
 .wait {
@@ -278,6 +298,10 @@ p.hello strong {
 
 .md-bottom-margin {
 	margin-bottom: 2rem;
+}
+
+.text-row.lg-bottom-margin {
+	margin-bottom: 3rem;
 } 
 
 .blue-link {
@@ -320,7 +344,7 @@ p.hello strong {
 }
 
 
-@media screen and (max-width: 585px) {
+@media screen and (max-width: 595px) {
 	.menu {
 		flex-direction: column;
 		align-items: center;
@@ -334,7 +358,8 @@ p.hello strong {
 		padding: 1rem 2rem;
 	}
 	#header,
-	.text-row {
+	.text-row,
+	.gallery {
 		padding: 0 1rem;
 	}
 

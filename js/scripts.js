@@ -17,22 +17,12 @@ $(document).ready(function() {
     	adapt_video();
     	setListeners();
     }
-});
 
-
-/*
-function adapt() {
-	//var height = window.innerHeight;
-    //$('body').height(height);
-
-    if ( $(".wireframe").length ) {
-    	if (window.innerWidth >= 732)
-    		$(".wireframe img").width( 700 );
-    	else
-    		$(".wireframe img").width( $(".row").width() - 32 );
+    if ( $("#photography").length ) {
+        load_pictures();
     }
-}
-*/
+
+});
 
 function adapt_bg() {
 	$(".bg").height( $(document).innerHeight() );
@@ -54,6 +44,37 @@ function setListeners() {
 	});
 }
 
+async function load_pictures() {
+
+    for (var i = 1; i <= 22; i++) {
+        await delay(i);
+        /*$("#photography").append( 
+            '<div class="row photo">'
+                +'<img class="portfolio-pic" src="../images/photography/pics-'+i+'.jpg">'
+            +'</div>'
+        );
+        */
+    }
+}
+
+function delay(n) {
+  return new Promise(resolve => setTimeout(function() {
+    $("#photography").append( 
+        '<div class="row photo">'
+            +'<img class="portfolio-pic" src="../images/photography/pics-'+n+'.jpg">'
+        +'</div>'
+    );
+    resolve();
+    }, 800));
+}
+
+function load_picture_n(n) {
+    $("#photography").append( 
+        '<div class="row photo">'
+            +'<img class="portfolio-pic" src="../images/photography/pics-'+n+'.jpg">'
+        +'</div>'
+    );
+}
 
 $(window).scroll(function() {
 	if ( $(window).scrollTop() > 20 ) {

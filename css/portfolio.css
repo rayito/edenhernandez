@@ -75,3 +75,7 @@
 	top: 0;
 	background-color: white;
 }
+
+.photo {
+	max-width: 1200px;
+}
